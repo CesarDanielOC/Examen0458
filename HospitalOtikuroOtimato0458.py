@@ -1,56 +1,64 @@
-print("Examen 0458")
+print("Examen 0458\n")
 class Hospital0458:
+    def Medicamento0458(self):
         Medicamento0458 = {
 "Medicamentos:": "Aspirina",
 "ID_Medicamento:": 1,
 "Descripción": "Antianalgésico",
 "Dosis:": "1 pastilla",
 "Frecuencia:": "8 horas",
-"Efectos_Secundarios": "Nauseas, adormecimiento",
+"Efectos Secundarios": "Nauseas, adormecimiento",
 "Precio:": 40
-}
-        for x, y in Medicamento0458.items():
-                print(x, y)
-                Médico0458 = {
-"\nNombre del médico:": "José Alfredo \n",
+        }
+        for x,y in Medicamento0458.items():
+            print(x,y)
+
+    def Medico0458(self):
+        Médico0458 = {
+"Nombre del médico:": "José Alfredo ",
 "ID_Médico:": 1,
-"\nApellido": "Jimenez Alvarado\n",
-"Especialidad:": "Neurología\n",
-"Número de teléfono:": "656 147 8742\n",
-"Correo": "Josealfredo@gmail.com\n",
+"Apellido": "Jimenez Alvarado",
+"Especialidad:": "Neurología",
+"Número de teléfono:": "656 147 8742",
+"Correo": "Josealfredo@gmail.com",
 "Fecha de contratación:": "7 de octubre 2019"
-}
-        for x, y in Médico0458.items():
-                print(x, y)
-                Paciente0458 = {
-"\nNombre del paciente:": "Pepito \n",
+        }
+        for x,y in Médico0458.items():
+            print(x,y)
+
+    def Paciente0458(self):
+        Paciente0458 = {
+"Nombre del paciente:":"Pepito",
+"Apellido": "Juanes",
 "ID_Paciente:": 1,
-"\nApellido": "Juanes\n",
-"Fecha de nacimiento:": "10 de noviembre 2015\n",
-"Número de teléfono:": "656 851 8411\n",
-"Dirección": "Calle del perro #8124\n",
+"Fecha de nacimiento:": "10 de noviembre 2015",
+"Número de teléfono:": "656 851 8411",
+"Dirección": "Calle del perro #8124",
 "Fecha de registro:": "10 de noviembre 2016"
-}
+        }
         for x, y in Paciente0458.items():
                 print(x, y)
-                Receta0458 = {
-"\nID_Receta:": 1,
+
+    def Receta0458(self):
+        Receta0458 = {
+"ID_Receta:": 1,
 "ID_Paciente:": 1,
-"ID_Médico": "1",
-"Fecha de Receta:": "10 de noviembre 2016\n",
-"Instrucciones:": "Inyectar en glúteos cada 2 meses\n",
-"Validez": "Contactar a Josealvarado@gmail.com\n",
+"ID_Médico": 1,
+"Fecha de Receta:": "10 de noviembre 2016",
+"Instrucciones:": "Inyectar en glúteos cada 2 meses",
+"Validez": "Contactar a Josealvarado@gmail.com",
 "ID_Medicamento:": 5
-}
+        }
         for x, y in Receta0458.items():
                 print(x, y)
 
-Objeto = Hospital0458()
-print("\nMedicamento")
-print(Hospital0458.Medicamento0458)
-print("\nMédico")
-print(Hospital0458.Médico0458)
-print("\nPaciente")
-print(Hospital0458.Paciente0458)
-print("\nMedicamento")
-print(Hospital0458.Receta0458)
+objeto = Hospital0458()
+
+print("\nDatos del Medicamento")
+objeto.Medicamento0458()
+print("\nDatos del médico")
+objeto.Medico0458()
+print("\nDatos del paciente")
+objeto.Paciente0458()
+print("\nDatos de la Receta")
+objeto.Receta0458()
